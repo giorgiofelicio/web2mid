@@ -10,7 +10,7 @@
 require_once "db.php";
 
 if (! isset($_GET["username"]))
-    die("<p>ID produk tidak diketahui</p>");
+    die("<p>ID tidak diketahui</p>");
 
 $conn = konek_db();
 
@@ -39,9 +39,9 @@ if ($oldimage) {
     $result = $query->execute();
 
     if ($result)
-        echo "<p>Image produk berhasil dihapus</p>";
+        echo "<p>Image berhasil dihapus</p>";
     else
-        echo "<p>Gagal hapus image produk</p>";
+        echo "<p>Gagal hapus image</p>";
 }
 header("Location: profile.php");
 ?>

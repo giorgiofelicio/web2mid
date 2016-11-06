@@ -10,12 +10,12 @@
 require_once "db.php";
 
 if (! isset($_POST["username"]))
-    die("<p>ID produk tidak diketahui</p>");
+    die("<p>ID tidak diketahui</p>");
 
 if (! isset($_POST["nama"]) ||
     ! isset($_POST["email"]) ||
     ! isset($_POST["password"]))
-    die("<p>Data produk tidak lengkap</p>");
+    die("<p>Data tidak lengkap</p>");
 
 $conn = konek_db();
 
